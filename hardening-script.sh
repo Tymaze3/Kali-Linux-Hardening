@@ -23,7 +23,7 @@ sudo systemctl restart ssh
 # 3️⃣ Set password and lockout policy
 echo "[+] Configuring password & lockout policies..."
 
-# Password min length
+# 🔐 Set strong password length (min 14)
 sudo sed -i 's/^PASS_MIN_LEN.*/PASS_MIN_LEN   14/' /etc/login.defs
 
 # Lockout after 5 failed attempts (fail2ban style)
