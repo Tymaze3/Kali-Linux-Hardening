@@ -16,11 +16,11 @@ The goal is to lock down a Kali VM while preserving functionality for ethical ha
 
 ## 🛠️ Hardening Tasks (Planned & Implemented)
 
-- [x] Enable UFW firewall with default-deny rules
-- [x] Disable root SSH login
-- [x] Configure strong password and lockout policies
-- [x] Harden file permissions
-- [x] Disable and remove unused services
+- [ ] Enable UFW firewall with default-deny rules
+- [ ] Disable root SSH login
+- [ ] Configure strong password and lockout policies
+- [ ] Harden file permissions
+- [ ] Disable and remove unused services
 - [ ] Enable logging and auditing (rsyslog, auditd)
 - [ ] Set automatic updates or manual patch reminders
 - [ ] Bash history & environment cleanup
@@ -29,4 +29,16 @@ The goal is to lock down a Kali VM while preserving functionality for ethical ha
 ---
 
 ## 📂 Repo Layout
+
+Kali-Linux-Hardening/
+├── hardening-script.sh        # The main Bash script
+├── Before-After.md            # System state comparison
+├── References.md              # Links to benchmarks and guides
+└── README.md
+
+## ⚙️ How to Use
+
+```bash
+chmod +x hardening-script.sh
+sudo ./hardening-script.sh
 
